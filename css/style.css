@@ -242,7 +242,7 @@ header .navbar {
 #banner {
   background: url('../img/empresa.jpg');
   background-size: cover;
-  padding: 250px 0;
+  padding: 150px 0;
   position: relative;
 }
 #banner:before {
@@ -262,14 +262,14 @@ header .navbar {
 }
 #banner .block h1 {
   padding-bottom: 25px;
-  font-size: 55px;
-  font-weight: 100;
+  font-size: 115px;
+  font-weight: 350;
   color: #f59999;
 }
 #banner .block h2 {
-  font-size: 22px;
-  line-height: 35px;
-  font-weight: 350;
+  font-size: 60px;
+  line-height: 100px;
+  font-weight: 200;
 }
 #banner .block .btn-learn {
   border: 1px solid #fff;
