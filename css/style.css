@@ -262,16 +262,95 @@ header .navbar {
 }
 #banner .block h1 {
   padding-bottom: 25px;
-  font-size: 115px;
+  font-size: clamp(50px, 6vw, 115px);
   font-weight: 350;
   color: #f59999;
+  text-shadow: 7px 7px 7px rgba(0,0,0,0.7);
 }
 #banner .block h2 {
-  font-size: 60px;
-  line-height: 100px;
+ font-size: clamp(30px, 3vw, 60px);
+  line-height: 1.2;
   font-weight: 200;
+  text-shadow: 7px 7px 7px rgba(0,0,0,0.7);
+  padding-bottom: 25px;
 }
-#banner .block .btn-learn {
+.btn-learn {
+background-color: #cc0000;
+color: #fff;
+border: 2px solid #cc0000;
+}
+/* Botón exclusivo del banner */
+#banner .btn-learn {
+background-color: transparent;
+border: 1px solid #fff;
+color: #fff;
+}
+#banner .btn-learn:hover {
+background-color: #fff;
+color: #cc0000;
+}
+
+.texto h1{
+  font-size: clamp(35px, 3vw, 50px);
+  text-align: center;
+  font-weight: 450px;
+  padding-left:40px; 
+  padding-right: 40px;
+
+}
+.texto h2{
+  font-size: clamp(25px, 2vw, 30px);
+  font-weight: normal;
+  line-height: 40px;
+  padding: 40px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.texto h3{
+  font-size: clamp(25px, 2vw, 30px);
+  font-weight: bold;
+  line-height: 40px;
+  padding: 10px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+#detalles {
+  background: url('../img/collage.png');
+  text-align: center;
+  background-size: cover;
+  padding: 50px 0;
+  margin-top: 40px;
+  position: relative;
+}
+#detalles:before {
+  position: absolute;
+  z-index: 99;
+  background: rgba(0, 0, 0, 0.60);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: '';
+}
+#detalles .bloque {
+  position: relative;
+  z-index: 999;
+  color: #fff;
+}
+#detalles .bloque h1 {
+  padding-bottom: 70px;
+  font-size: clamp(30px, 3vw, 75px);
+  font-weight: bold;
+  color: #f59999;
+  text-shadow: 5px 5px 5px rgba(0,0,0,1);
+}
+#detalles .bloque h2 {
+  font-size: clamp(18px, 2vw, 40px);
+  line-height: 120%;
+  font-weight: 350;
+  text-shadow: 3px 3px 3px rgba(0,0,0,1);
+}
+#detalles .bloque .btn-learn {
   border: 1px solid #fff;
   color: #fff;
   border-radius: 25px;
@@ -280,22 +359,22 @@ header .navbar {
   font-size: 14px;
   transition: 0.3s;
 }
-#banner .block .btn-learn:hover {
+#detalles .bloque .btn-learn:hover {
   border-color: #80d6a3;
   color: #80d6a3;
 }
-#banner .block .buttons {
+#detalles .bloque .buttons {
   margin-top: 40px;
 }
-#banner .block .buttons a:first-child {
+#detalles .bloque .buttons a:first-child {
   margin-left: 0;
 }
-#banner .scrolldown {
+#detalles .scrolldown {
   position: absolute;
   left: 50%;
   bottom: 18%;
 }
-#banner .scrolldown .scroll {
+#detalles .scrolldown .scroll {
   border-radius: 100px;
   width: 25px;
   height: 45px;
@@ -306,7 +385,7 @@ header .navbar {
   border: 1px solid #fff;
   z-index: 99;
 }
-#banner .scrolldown .scroll:after {
+#detalles .scrolldown .scroll:after {
   background: #fff;
   border-radius: 300px;
   width: 4px;
@@ -322,6 +401,11 @@ header .navbar {
   -o-animation: wiggle 0.5s linear 0s infinite alternate;
   animation: wiggle 0.5s linear 0s infinite alternate;
 }
+#detalles .contenedor {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 #features {
   padding: 30px 0 0;
 }
@@ -356,6 +440,9 @@ header .navbar {
 }
 #features .showcase-img {
   margin-top: 40px;
+}
+#boton {
+  text-align: center;
 }
 #counter {
   background: url(../img/counter-bg.jpg) no-repeat;
@@ -916,6 +1003,35 @@ footer p {
   color: #fff;
   line-height: 1;
   padding-top: 26px;
+}
+.btn-learn {
+display: inline-block;
+background-color: #cc0000;
+color: #fff;
+padding: 14px 38px;
+font-size: 15px;
+font-weight: 600;
+letter-spacing: 1px;
+text-transform: uppercase;
+border-radius: 30px;
+text-decoration: none;
+transition: all 0.3s ease;
+border: 2px solid #cc0000;
+}
+
+
+/* Hover */
+.btn-learn:hover {
+background-color: transparent;
+color: #cc0000;
+transform: translateY(-2px);
+box-shadow: 0 10px 25px rgba(204, 0, 0, 0.35);
+}
+@media (max-width: 576px) {
+.btn-learn {
+padding: 12px 28px;
+font-size: 14px;
+}
 }
 /* =====================
    Blog Post
