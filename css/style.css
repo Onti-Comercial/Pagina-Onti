@@ -240,7 +240,7 @@ header .navbar {
    Home page style
    ================= */
 #banner {
-  background: url('../img/empresa.jpg');
+  background: url('../img/empresa.webp');
   background-size: cover;
   padding: 150px 0;
   position: relative;
@@ -445,7 +445,7 @@ color: #cc0000;
   text-align: center;
 }
 #counter {
-  background: url(../img/counter-bg.jpg) no-repeat;
+  background: url(../img/counter-bg.webp) no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -606,7 +606,7 @@ color: #cc0000;
 }
 #play-video {
   padding: 105px 0;
-  background: url("../img/idea.jpg") no-repeat;
+  background: url("../img/idea.webp") no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -938,7 +938,7 @@ color: #cc0000;
    contact page style
    ===================== */
 #global-header {
-  background: url(../img/ciudad.jpg) no-repeat;
+  background: url(../img/ciudad.webp) no-repeat;
   background-size: 100%;
   background-position: center;
   padding: 150px 0 90px;
@@ -1482,7 +1482,7 @@ font-size: 14px;
 margin-top: 10px;
 }
 #contact-form {
-  background: url(../img/mundo.jpg) no-repeat;
+  background: url(../img/mundo.webp) no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
