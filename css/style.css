@@ -1,8 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:100,400,300,700);
-
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,100);
-@import url(https://fonts.googleapis.com/css?family=Lora:400italic);
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 /* ==================
  *
  *google fonts 
@@ -177,7 +172,7 @@ header {
 }
 header .navbar {
   height: auto;
-  margin-bottom: 0;
+  margin-bottom: ;
 }
 .is-sticky #navigation {
   background: #fff;
@@ -187,7 +182,7 @@ header .navbar {
   padding: 0;
 }
 .navbar-brand {
-  padding: 0;
+  padding : 20px;
   height: auto;
 }
 .navbar-toggle {
@@ -315,7 +310,7 @@ color: #cc0000;
   margin-left: 50px;
 }
 #detalles {
-  background: url('../img/collage.png');
+  background: url('../img/collage.webp');
   text-align: center;
   background-size: cover;
   padding: 50px 0;
@@ -1751,4 +1746,15 @@ text-align: center;
   color: white;
   cursor: pointer;
   z-index: 10000;
+}
+
+.navbar-header,
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar-brand img {
+  display: block;
 }
