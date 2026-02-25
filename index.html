@@ -16,7 +16,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
 	<!-- Css link -->
-	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="preload" href="/css/style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 
@@ -37,7 +37,7 @@
 
 				<!-- logo -->
 				<h1 class="navbar-brand">
-					<a><img src="img/ONTILOGO.png" height="82" width="250" srcset="img/ONTILOGO.png 920w, img/ONTILOGO-cel.webp 375w" sizes= " " alt="Logo de Onti Comercial"  ></a>
+					<a><img src="img/ONTILOGO.png" height="82" width="250" srcset="img/ONTILOGO.png 250w, img/ONTILOGO-cel.webp 150w" sizes= "(max-width:768px) 150px, 250px" alt="Logo de Onti Comercial" class="img-responsive"></a>
 				</h1>
 				<!-- /logo -->
 			</div>
