@@ -816,6 +816,7 @@ color: #cc0000;
   margin-bottom: 20px; /* Espaciado entre filas */
 }
 .img-responsive {
+  width: 100%;
   height: auto;
   display: block;
 }
