@@ -456,6 +456,47 @@ a:focus,
 a:active {
   text-decoration: none !important;
 }
+/* ================ Home end ========================= */
+/* =====================
+   contact page style
+   ===================== */
+#global-header {
+  background: url(../img/ciudad.webp) no-repeat;
+  background-size: 100%;
+  background-position: center;
+  padding: 150px 0 90px;
+  text-align: center;
+  position: relative;
+}
+#global-header:before {
+  position: absolute;
+  z-index: 99;
+  background: rgba(60, 59, 72, 0.69);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: '';
+  z-index: 1;
+}
+#global-header .block {
+  position: relative;
+  z-index: 10;
+  color: #fff;
+}
+#global-header .block h1 {
+  margin-top: 40px;
+}
+#global-header .block p {
+  font-size: 15px;
+  padding-top: 10px;
+  font-family: 'Lora', serif;
+}
+.titulo-productos h1 {
+ text-align: center;
+ padding: 30px;
+}
+/* ================ Contact end ========================= */
 /* ==================
  *
  *  Global Class 
