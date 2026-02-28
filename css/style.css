@@ -566,10 +566,11 @@ header {
   align-items: center;
 }
 .navbar-brand {
-  padding : 20px;
-  height: auto;
+  display: flex;
+  align-items: center;
 }
 .navbar-brand img {
+  max-width: 250px;
   width: 250px;
   height: auto;
   display: block;
