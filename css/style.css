@@ -568,8 +568,7 @@ header {
 }
 
 .navbar-brand img {
-  width: 250px;
-  height: auto;
+  width: 100%;
   display: flex;
   align-items: center;
   height: 100%;
