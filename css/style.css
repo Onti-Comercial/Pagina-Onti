@@ -718,7 +718,7 @@ color: #cc0000;
   text-align: center;
 }
 
-.slogan img {
+#slogan img {
   width: 100%;
   max-width: 1200px;
   height: auto;
