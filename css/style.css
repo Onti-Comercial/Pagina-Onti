@@ -713,6 +713,18 @@ color: #cc0000;
 #boton {
   text-align: center;
 }
+#slogan {
+  width: 100%;
+  text-align: center;
+}
+
+.slogan img {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 #counter {
   background: url(../img/counter-bg.webp) no-repeat;
   background-size: cover;
@@ -1287,5 +1299,6 @@ text-align: center;
 }
 
 .navbar-brand img {
-  display: block;
+  width: 250px;
+  height: auto;
 }
