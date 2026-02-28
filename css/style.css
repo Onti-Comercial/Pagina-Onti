@@ -564,18 +564,15 @@ header {
 .navbar-header {
   display: flex;
   align-items: center;
-  height: 100%;
-}
-
-.navbar-brand img {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  height: 100%;
 }
 .navbar-brand {
   padding : 20px;
   height: auto;
+}
+.navbar-brand img {
+  width: 250px;
+  height: auto;
+  display: block;
 }
 .navbar-toggle {
   border-color: #333;
