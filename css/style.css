@@ -561,6 +561,19 @@ a:active {
 header {
   background: #fff;
 }
+.navbar-header {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar-brand img {
+  width: 250px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
 .navbar-brand {
   padding : 20px;
   height: auto;
@@ -1291,14 +1304,3 @@ text-align: center;
   z-index: 10000;
 }
 
-.navbar-header,
-.navbar-brand {
-  display: flex;
-  align-items: center;
-  height: 100%;
-}
-
-.navbar-brand img {
-  width: 250px;
-  height: auto;
-}
