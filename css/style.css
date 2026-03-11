@@ -564,6 +564,7 @@ header {
 .navbar-header {
   display: flex;
   align-items: center;
+  padding: 25px;
 }
 .navbar-brand {
   display: flex;
