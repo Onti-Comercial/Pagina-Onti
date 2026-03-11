@@ -130,6 +130,16 @@
 
 }
 
+/* ================== ANIMATE ===================*/
+
+@charset "UTF-8";/*!
+Animate.css - http://daneden.me/animate
+Licensed under the MIT license - http://opensource.org/licenses/MIT
+
+Copyright (c) 2015 Daniel Eden
+*/
+.animated{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both}.fadeInRight{-webkit-animation-name:fadeInRight;animation-name:fadeInRight}
+
 
 /* ================== OWL CAROUSEL ===================*/
 
@@ -196,16 +206,6 @@
  *  Owl Carousel CSS3 Transitions 
  *  v1.3.2
  */
-/* ================== ANIMATE ===================*/
-
-@charset "UTF-8";/*!
-Animate.css - http://daneden.me/animate
-Licensed under the MIT license - http://opensource.org/licenses/MIT
-
-Copyright (c) 2015 Daniel Eden
-*/
-.animated{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both}.fadeInRight{-webkit-animation-name:fadeInRight;animation-name:fadeInRight}
-
 /* ================== LIGHTBOX ===================*/
 
 /* Preload images */
