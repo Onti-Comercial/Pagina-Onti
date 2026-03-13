@@ -9,6 +9,12 @@
 	<link rel="icon" type="image/png" href="img/icon.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="preload" as="image" href="img/empresa.webp" fetchpriority="high">
+	<style>
+	  /* Apagar transiciones costosas globalmente para mejorar rendimiento en móviles */
+	  * {
+	      transition-property: opacity, transform !important;
+	  }
+	</style>
 
 	<!-- google fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
