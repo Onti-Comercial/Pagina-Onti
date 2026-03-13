@@ -574,7 +574,7 @@ header {
 }
 .navbar-toggle {
   border-color: #333;
-  transition: 0.3s;
+  transition:opacity 0.3s
 }
 .menu a {
   color: #333;
