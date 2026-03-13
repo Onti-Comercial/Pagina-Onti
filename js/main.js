@@ -1,7 +1,4 @@
 window.addEventListener('load', function() {
-  // Retrasamos la ejecución de los carruseles hasta que el navegador esté inactivo
-  // (O si el navegador es viejo, le damos 500ms de retraso)
-  const initPlugins = function() {
     var owl = $("#header-slider");
     if (owl.length) {
       owl.owlCarousel({
@@ -40,12 +37,4 @@ window.addEventListener('load', function() {
     if (typeof WOW === "function") {
       new WOW().init();
     }
-  };
-
-  //requestIdleCallback ejecuta el código cuando el procesador del celular ya no está ocupado
-  if ('requestIdleCallback' in window) {
-    requestIdleCallback(initPlugins);
-  } else {
-    setTimeout(initPlugins, 500); 
-  }
 });
