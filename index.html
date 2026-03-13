@@ -428,30 +428,13 @@
 		</div>
 	</main>
 		<!-- load Js -->
-		<script>
-		window.addEventListener('load', function() {
-			setTimeout(function() {
-				const scripts = [
-					"https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js",
-					"js/bootstrap.min.js?v=8",
-					"js/owl.carousel.min.js?v=8",
-					"js/jquery.mixitup.min.js?v=8",
-					"js/wow.min.js?v=8",
-					"https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js",
-					"js/main.js?v=8",
-					"js/script.js?v=8"
-				];
-
-				scripts.forEach(src => {
-					const script = document.createElement('script');
-					script.src = src;
-					// Ionicons necesita nomodule
-					if(src.includes('ionicons')) script.setAttribute('nomodule', ''); 
-					document.body.appendChild(script);
-				});
-			}, 500); // Retrasa la descarga de scripts 0.5 segundos después de pintar la página
-		});
-	</script>
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js" defer></script>
+	<script src="js/bootstrap.min.js?v=9" defer></script>
+	<script src="js/owl.carousel.min.js?v=9" defer></script>
+	<script src="js/jquery.mixitup.min.js?v=9" defer></script>
+	<script src="js/wow.min.js?v=9" defer></script>
+	<script src="js/main.js?v=9" defer></script>
+	<script src="js/script.js?v=9" defer></script>
 </body>
 
 </html>
