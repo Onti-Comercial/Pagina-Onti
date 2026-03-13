@@ -9,21 +9,18 @@
 	<link rel="icon" type="image/png" href="img/icon.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="preload" as="image" href="img/empresa.webp" fetchpriority="high">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+	
+	<link rel="stylesheet" href="css/style.min.css?v=8">
+	
 	<style>
-	  /* Apagar transiciones costosas globalmente para mejorar rendimiento en móviles */
 	  * {
 	      transition-property: opacity, transform !important;
 	  }
 	</style>
-
-	<!-- google fonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-	<!-- Css link -->
-	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-	<link rel="stylesheet" href="css/style.min.css">
-	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 
 
@@ -431,13 +428,30 @@
 		</div>
 	</main>
 		<!-- load Js -->
-		<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js" defer></script>
-		<script src="js/bootstrap.min.js" defer></script>
-		<script src="js/owl.carousel.min.js?v=2" defer></script>
-		<script src="js/jquery.mixitup.min.js?v=2" defer></script>
-		<script src="js/wow.min.js" defer></script>
-		<script src="js/main.js" defer></script>
-		<script src="js/script.js" defer></script>
+		<script>
+		window.addEventListener('load', function() {
+			setTimeout(function() {
+				const scripts = [
+					"https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js",
+					"js/bootstrap.min.js?v=8",
+					"js/owl.carousel.min.js?v=8",
+					"js/jquery.mixitup.min.js?v=8",
+					"js/wow.min.js?v=8",
+					"https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js",
+					"js/main.js?v=8",
+					"js/script.js?v=8"
+				];
+
+				scripts.forEach(src => {
+					const script = document.createElement('script');
+					script.src = src;
+					// Ionicons necesita nomodule
+					if(src.includes('ionicons')) script.setAttribute('nomodule', ''); 
+					document.body.appendChild(script);
+				});
+			}, 500); // Retrasa la descarga de scripts 0.5 segundos después de pintar la página
+		});
+	</script>
 </body>
 
 </html>
